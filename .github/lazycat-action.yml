@@ -19,9 +19,11 @@ images:
     target: service
     service: yarr
     source: nkanaev/yarr
-    channel: stable
+    channel: custom
     sort: semver
     tag_regex: '^v2[.][0-9]+$'
+    version_regex: '^v(?P<version>[0-9]+)[.](?P<minor>[0-9]+)$'
+    version_template: '{version}.{minor}.0'
     delivery:
       mode: mirror
       require_digest_match: true
