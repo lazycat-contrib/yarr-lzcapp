@@ -1,0 +1,21 @@
+params:
+  - id: reader_user
+    type: string
+    name: Reader username
+    description: "Login for the feed reader. Letters, digits and _ . @ - only; must not contain a colon."
+    default_value: reader
+    optional: false
+  - id: reader_secret
+    type: secret
+    name: Reader secret
+    description: "At least 12 characters and no colon, because Yarr splits the auth line on the first colon."
+    default_value: "$random(len=20)"
+    optional: false
+locales:
+  zh:
+    reader_user:
+      name: 阅读器用户名
+      description: 登录订阅阅读器用。只能用字母、数字和 _ . @ -，且不能包含冒号。
+    reader_secret:
+      name: 阅读器密码
+      description: 至少 12 位且不能包含冒号——Yarr 按第一个冒号切分账号和密码。

@@ -1,0 +1,18 @@
+package: community.lazycat.app.yarr
+version: 2.9.0
+name: Yarr
+description: "Minimal RSS/Atom feed reader with a single binary and no external services."
+min_os_version: "1.5.0"
+homepage: https://github.com/nkanaev/yarr
+author: nkanaev
+license: MIT
+permissions:
+  required:
+    - net.internet
+locales:
+  zh:
+    name: Yarr
+    description: "极简 RSS/Atom 订阅阅读器，单文件运行，不需要外部数据库。"
+  en:
+    name: Yarr
+    description: "Minimal RSS/Atom feed reader with a single binary and no external services."
